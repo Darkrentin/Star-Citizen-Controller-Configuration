@@ -3,10 +3,15 @@ setlocal enabledelayedexpansion
 
 echo Recherche du fichier "Star Citizen" dans le dossier actuel...
 
-:: Recherche dans le répertoire actuel et ses sous-dossiers
-for /r %%f in (*StarCitizen*) do (
-    echo %%f
+:: Recherche dans le dossier actuel et ses sous-répertoires
+for /r %%f in (*Star Citizen*) do (
+    echo Fichier trouvé : %%f
+    goto :found
 )
 
-echo Recherche terminée.
+echo Aucune correspondance trouvée.
+goto :end
+
+:found
 pause
+:end
