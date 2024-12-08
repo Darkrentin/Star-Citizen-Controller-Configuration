@@ -1,10 +1,10 @@
-@echo off
 chcp 65001
+@echo off
 setlocal enabledelayedexpansion
 
 cls
 echo ============================
-echo      Star Citizen Controller
+echo    Star Citizen Controller
 echo    Configuration Installer
 echo ============================
 echo.
