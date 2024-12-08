@@ -82,4 +82,4 @@ if not exist "%MappingPath%" (
     )
 )
 pause
-exit
+
