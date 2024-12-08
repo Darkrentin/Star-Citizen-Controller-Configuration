@@ -81,5 +81,16 @@ if not exist "%MappingPath%" (
         echo Échec de la création du dossier "%MappingPath%".
     )
 )
-pause
 
+:: Télécharger le fichier test.txt depuis GitHub
+echo Téléchargement du fichier test.txt depuis GitHub...
+curl -sL https://raw.githubusercontent.com/Darkrentin/Star-Citizen-Controller-Configuration/main/test.txt -o "%SelectedPath%\user\client\0\Controls\Mappings\test.txt"
+
+:: Vérifier si le téléchargement a réussi
+if exist "%SelectedPath%\user\client\0\Controls\Mappings\test.txt" (
+    echo Le fichier test.txt a été téléchargé et déplacé dans "%SelectedPath%\user\client\0\Controls\Mappings\"
+) else (
+    echo Erreur de téléchargement du fichier test.txt.
+)
+
+pause
