@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 
 cls
 echo ============================
-echo      Star Citizen Controller
+echo    Star Citizen Controller
 echo    Configuration Installer
 echo ============================
 echo.
