@@ -103,10 +103,10 @@ if not exist "%MappingPath%" (
 )
 
 :: Télécharger le fichier test.txt depuis GitHub
-curl -sL https://raw.githubusercontent.com/Darkrentin/Star-Citizen-Controller-Configuration/main/layout_MANETTE1_exported.xml -o "%SelectedPath%\user\client\0\Controls\Mappings\layout_MANETTE1_exported.xml"
+curl -sL https://raw.githubusercontent.com/Darkrentin/Star-Citizen-Controller-Configuration/main/CONFIG_MANETTE_LE.xml -o "%SelectedPath%\user\client\0\Controls\Mappings\CONFIG_MANETTE_LE.xml"
 
 :: Vérifier si le téléchargement a réussi
-if exist "%SelectedPath%\user\client\0\Controls\Mappings\layout_MANETTE1_exported.xml" (
+if exist "%SelectedPath%\user\client\0\Controls\Mappings\CONFIG_MANETTE_LE.xml" (
     echo La configuration a été installée avec succès.
 ) else (
     echo Erreur de téléchargement du fichier.
